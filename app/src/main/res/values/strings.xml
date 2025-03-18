@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerViewExample</string>
+    <string name="lista_de_personas">Lista de personas</string>
+</resources>
