@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.recyclerviewexample"
+    namespace = "us.ldts.ktldts1rv"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.recyclerviewexample"
+        applicationId = "us.ldts.ktldts1rv"
         minSdk = 35
         targetSdk = 35
         versionCode = 1
