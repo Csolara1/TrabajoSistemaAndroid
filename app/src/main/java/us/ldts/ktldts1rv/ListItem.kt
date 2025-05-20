@@ -1,8 +1,17 @@
 package us.ldts.ktldts1rv
 
-data class ListItem(
+import com.google.gson.annotations.SerializedName
 
-    val idGrupo: String,
-    val pec: String,
-    val clase: String
+data class ListItem(
+    @SerializedName("alumnoNombre")
+    val alumnos: String,
+
+    @SerializedName("examenDescripcion")
+    val examenes: String,
+
+    @SerializedName("notaAlumno")
+    val notas: String,
+
+    @SerializedName("materiaNombre")
+    val materias: String
 )

@@ -10,9 +10,10 @@ class ListItemAdapter(private val listadoItems: List<ListItem>) :
     RecyclerView.Adapter<ListItemAdapter.PersonaViewHolder>() {
 
     class PersonaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val idGrupoTextView: TextView = itemView.findViewById(R.id.idGrupoTextView)
-        val pecTextView: TextView = itemView.findViewById(R.id.pecTextView)
-        val claseTextView: TextView = itemView.findViewById(R.id.claseTextView)
+        val alumnosTextView: TextView = itemView.findViewById(R.id.alumnosTextView)
+        val examenesTextView: TextView = itemView.findViewById(R.id.examenesTextView)
+        val notasTextView: TextView = itemView.findViewById(R.id.notasTextView)
+        val materiasTextView: TextView = itemView.findViewById(R.id.materiasTextView)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PersonaViewHolder {
@@ -23,9 +24,10 @@ class ListItemAdapter(private val listadoItems: List<ListItem>) :
 
     override fun onBindViewHolder(holder: PersonaViewHolder, position: Int) {
         val personaActual = listadoItems[position]
-        holder.idGrupoTextView.text = personaActual.idGrupo
-        holder.pecTextView.text = personaActual.pec
-        holder.claseTextView.text = personaActual.clase
+        holder.alumnosTextView.text = personaActual.alumnos
+        holder.examenesTextView.text = personaActual.examenes
+        holder.notasTextView.text = personaActual.notas
+        holder.materiasTextView.text = personaActual.materias
     }
 
     override fun getItemCount() = listadoItems.size
